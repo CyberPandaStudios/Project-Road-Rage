@@ -80,3 +80,10 @@ Logs/shadercompiler-AssetImportWorker0.log
 Logs/shadercompiler-UnityShaderCompiler.exe1.log
 Logs/shadercompiler-UnityShaderCompiler.exe2.log
 Project Road Rage 1.0.sln
+*.log
+Library/ArtifactDB
+Library/EditorInstance.json
+Library/SourceAssetDB
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
+Temp/UnityLockfile
+Temp/workerlic
