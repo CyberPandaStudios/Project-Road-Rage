@@ -104,3 +104,5 @@ Library/SourceAssetDB
 Logs/shadercompiler-UnityShaderCompiler.exe0.log
 Temp/UnityLockfile
 Temp/workerlic
+Library/ArtifactDB
+Library/SourceAssetDB
