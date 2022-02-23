@@ -137,14 +137,15 @@ public class CarController : MonoBehaviour
          * This is where we get the input for shooting the gun
          */
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            var instanceBullet = Instantiate(bullet, shootPos.transform.position, shootPos.rotation);
+            var instanceBullet = Instantiate(bullet, shootPos.transform.position, Tower.rotation);
+            instanceBullet.transform.Rotate(0, 180, 0);
             //Forward force, must be offset due to gun placement
             //TODO may present problems with other cars further testing needed
             instanceBullet.GetComponent<Rigidbody>().AddForce(Tower.right * shootForce * 100f);
             //Upward force
-            instanceBullet.GetComponent<Rigidbody>().AddForce(Tower.up * 200f);
+            instanceBullet.GetComponent<Rigidbody>().AddForce(Tower.up * 500f);
         }
 
     }

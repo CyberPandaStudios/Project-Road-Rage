@@ -9017,7 +9017,7 @@ MonoBehaviour:
   maxSpeed: 50
   turnStrength: 100
   driftStrength: 200
-  driftGravity: 1000
+  driftGravity: 200
   breakForce: 50
   gravityForce: 10
   dragOnGround: 3
@@ -9035,7 +9035,7 @@ MonoBehaviour:
   - {fileID: 1332825475}
   - {fileID: 1924740528}
   maxEmission: 25
-  bullet: {fileID: 4008131828437084843, guid: 847a8cb863b00e9488e17361c62abdc4, type: 3}
+  bullet: {fileID: 3908852053071065044, guid: b661ce812cac5c44aa302d21375e5193, type: 3}
   shootForce: 30
   shootPos: {fileID: 87284107}
 --- !u!4 &1584411535
