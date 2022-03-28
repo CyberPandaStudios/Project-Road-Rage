@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629feea1059e8b7489a4611534cddae4, type: 3}
+  m_Name: tractorPolice
+  m_EditorClassIdentifier: 
+  carName: Bertha
+  speed: 15
+  control: 30
+  damage: 70
+  carModel: {fileID: 2378015722399256530, guid: d32c06f19720569419bd9cf8361e6232,
+    type: 3}
