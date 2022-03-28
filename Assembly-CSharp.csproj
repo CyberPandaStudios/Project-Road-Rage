@@ -42,6 +42,7 @@
      <Compile Include="Assets\Scripts\Player\CarController.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarDisplay.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\Player\Bullets\MachineGunBullet.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarAnimation.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarSelection.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarModel.cs" />
@@ -52,7 +53,8 @@
      <Compile Include="Assets\Scripts\CarSelector\Car.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarChanger.cs" />
      <Compile Include="Assets\Scripts\Player\Bullets\Missile.cs" />
-     <Compile Include="Assets\Scripts\Player\Bullets\MachineGunBullet.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerSaveData.cs" />
+     <Compile Include="Assets\Scripts\Player\SaveSystem.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
