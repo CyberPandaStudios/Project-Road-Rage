@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+    public float health;
+    public Vector3 position;
+
+
+
     // Start is called before the first frame update
     void Start()
     {

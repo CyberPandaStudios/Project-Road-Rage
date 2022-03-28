@@ -35,20 +35,9 @@ public class CarController : MonoBehaviour
     public Transform leftFrontWheel, rightFrontWheel;
     public float maxWheelTurn = 25f;
 
-    //Tower transform for aiming gun on the car
-    public Transform Tower;
-    public float towerSpeed = 300f;
-    private float TowerAngleX;
-
     public ParticleSystem[] driftTrail;
     public float maxEmission = 25;
     private float emissionRate;
-
-    //Bullet prefab the car is currently using
-    public Transform bullet;
-    public float shootForce;
-    //Empty object the bullet will come out of the gun from
-    public Transform shootPos;
 
     void Start()
     {
@@ -131,23 +120,6 @@ public class CarController : MonoBehaviour
         //This is where the car object follows the sphere object
         transform.position = sphereRigidBody.transform.position;
 
-        RotateTower();
-
-        /*
-         * This is where we get the input for shooting the gun
-         */
-
-        if (Input.GetMouseButton(0))
-        {
-            var instanceBullet = Instantiate(bullet, shootPos.transform.position, Tower.rotation);
-            instanceBullet.transform.Rotate(0, 180, 0);
-            //Forward force, must be offset due to gun placement
-            //TODO may present problems with other cars further testing needed
-            instanceBullet.GetComponent<Rigidbody>().AddForce(Tower.right * shootForce * 100f);
-            //Upward force
-            instanceBullet.GetComponent<Rigidbody>().AddForce(Tower.up * 500f);
-        }
-
     }
 
     private void FixedUpdate()
@@ -181,17 +153,5 @@ public class CarController : MonoBehaviour
             sphereRigidBody.AddForce(Vector3.up * -gravityForce * 100f);
         }
     }
-
-    /*
-     * Gun rotation function based on mouse x axis 
-     */
-    private void RotateTower()
-    {
-        TowerAngleX += Input.GetAxis("Mouse X") * towerSpeed * -Time.deltaTime;
-        TowerAngleX = Mathf.Clamp(TowerAngleX, -60, 120);
-        Tower.localRotation = Quaternion.Euler(TowerAngleX, 90, 90);
-    }
-
-
 
 }
