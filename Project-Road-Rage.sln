@@ -21,9 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Timeline", "Unity.Tim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ProBuilder", "Unity.ProBuilder.csproj", "{628278e5-8129-ab0e-cc28-0e50e00f525b}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ProBuilder.Csg", "Unity.ProBuilder.Csg.csproj", "{8317a16e-ae3c-1f75-3346-42de8a74c18d}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{6200ae70-160d-3968-5ebd-8ccd728c874b}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ProBuilder.Csg", "Unity.ProBuilder.Csg.csproj", "{8317a16e-ae3c-1f75-3346-42de8a74c18d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ProBuilder.KdTree", "Unity.ProBuilder.KdTree.csproj", "{f8ca0a74-02fc-82a1-09bd-e38aedb43e6f}"
 EndProject
@@ -104,10 +104,10 @@ Global
 		{43de134b-2272-26ab-ed98-ae7084844b39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{628278e5-8129-ab0e-cc28-0e50e00f525b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{628278e5-8129-ab0e-cc28-0e50e00f525b}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8317a16e-ae3c-1f75-3346-42de8a74c18d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8317a16e-ae3c-1f75-3346-42de8a74c18d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6200ae70-160d-3968-5ebd-8ccd728c874b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6200ae70-160d-3968-5ebd-8ccd728c874b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8317a16e-ae3c-1f75-3346-42de8a74c18d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8317a16e-ae3c-1f75-3346-42de8a74c18d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f8ca0a74-02fc-82a1-09bd-e38aedb43e6f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f8ca0a74-02fc-82a1-09bd-e38aedb43e6f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{f1874ada-a562-4d7c-c689-304c8248df7d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

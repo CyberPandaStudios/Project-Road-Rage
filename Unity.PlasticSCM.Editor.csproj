@@ -142,6 +142,7 @@
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Views\Branch\BranchListViewItem.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Views\Diff\ClientDiffTreeViewItem.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Views\PendingChanges\UnityPendingChangesTree.cs" />
+     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\SceneView\DrawSceneOperations.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Developer\UpdateReport\UpdateReportListView.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\PlasticMenuItem.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Tool\BringWindowToFront.cs" />
@@ -308,6 +309,7 @@
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\CloudProjectDownloader\ParseArguments.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\CloudProjectDownloader\CommandLineArguments.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Views\CreateWorkspace\Dialogs\RepositoryExplorerDialog.cs" />
+     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\AssetsUtils\GetSelectedPaths.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Help\HelpLinkData.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Configuration\EncryptionConfigurationDialog.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\AssetMenu\AssetsSelection.cs" />
@@ -316,8 +318,6 @@
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Views\CreateWorkspace\CreateWorkspaceViewState.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Configuration\CloudEdition\Welcome\OrganizationPanel.cs" />
      <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\WorkspaceWindow.cs" />
-     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\AssetsUtils\GetSelectedPaths.cs" />
-     <Compile Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\SceneView\DrawSceneOperations.cs" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Assets\Styles\DownloadPlasticExeWindow.uss" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Assets\Styles\WaitingSignInPanel.uss" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@1.15.15\Editor\PlasticSCM\Assets\Layouts\TabView.uxml" />

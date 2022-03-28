@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Player\RocketLauncher.cs" />
      <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Player\CarController.cs" />
@@ -50,6 +51,8 @@
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\CarSelector\Car.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarChanger.cs" />
+     <Compile Include="Assets\Scripts\Player\Bullets\Missile.cs" />
+     <Compile Include="Assets\Scripts\Player\Bullets\MachineGunBullet.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
