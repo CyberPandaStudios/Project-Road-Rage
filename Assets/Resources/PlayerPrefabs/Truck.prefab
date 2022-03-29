@@ -5407,6 +5407,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d9e27f73291634da101c2a50d62446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  fuel: 0
+  position: {x: 0, y: 0, z: 0}
 --- !u!114 &831553053191374629
 MonoBehaviour:
   m_ObjectHideFlags: 0

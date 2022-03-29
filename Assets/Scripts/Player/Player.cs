@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float health;
+    public float health, fuel;
     public Vector3 position;
 
 

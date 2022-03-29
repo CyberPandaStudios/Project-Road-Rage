@@ -5618,6 +5618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43d9e27f73291634da101c2a50d62446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  fuel: 0
+  position: {x: 0, y: 0, z: 0}
 --- !u!114 &1421606221888817919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5635,6 +5638,7 @@ MonoBehaviour:
   bullet: {fileID: 3908852053071065044, guid: b661ce812cac5c44aa302d21375e5193, type: 3}
   shootForce: 10
   shootPos: {fileID: 1421606223084052709}
+  fireType: 0
 --- !u!1 &1421606222111685625
 GameObject:
   m_ObjectHideFlags: 0

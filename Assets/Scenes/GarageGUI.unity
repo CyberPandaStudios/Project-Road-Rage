@@ -2509,6 +2509,7 @@ GameObject:
   - component: {fileID: 1827188810}
   - component: {fileID: 1827188809}
   - component: {fileID: 1827188808}
+  - component: {fileID: 1827188811}
   m_Layer: 5
   m_Name: Select
   m_TagString: Untagged
@@ -2580,10 +2581,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 967521938}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ChangeCar
-        m_Mode: 3
+      - m_Target: {fileID: 1827188811}
+        m_TargetAssemblyTypeName: PlayGame, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2630,6 +2631,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827188806}
   m_CullTransparentMesh: 0
+--- !u!114 &1827188811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827188806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2068d7bed5f70f04d868391769683c1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game: Game
 --- !u!1 &1908098993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,9 +2674,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cars:
-  - {fileID: 7615683258749651926, guid: b0c01c51b9ed5774ebf060a480e27964, type: 3}
-  - {fileID: 3183703650968861325, guid: f5900406cd1d1cd4c9427ca09a416b8a, type: 3}
-  - {fileID: 2378015722399256530, guid: d32c06f19720569419bd9cf8361e6232, type: 3}
+  - {fileID: 1421606221888817891, guid: 0e3835ed3a7561b4bb1ee94812b8678b, type: 3}
+  - {fileID: 831553053191374624, guid: 9de80059bf2896140bef2c504e0c8055, type: 3}
 --- !u!4 &1908098995
 Transform:
   m_ObjectHideFlags: 0
