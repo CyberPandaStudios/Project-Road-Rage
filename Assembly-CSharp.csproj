@@ -49,6 +49,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player\RocketLauncher.cs" />
      <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+     <Compile Include="Assets\Imported Assets\Low-Poly-Water\Scripts\Water.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Player\CarController.cs" />
      <Compile Include="Assets\Scripts\Player\SaveSystem.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarDisplay.cs" />
@@ -56,13 +58,19 @@
      <Compile Include="Assets\Scripts\Player\Bullets\MachineGunBullet.cs" />
      <Compile Include="Assets\Scripts\CarSelector\PlayGame.cs" />
      <Compile Include="Assets\Scripts\Enemies\MonsterSpawner.cs" />
+     <Compile Include="Assets\Scripts\Player\HealthBar.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarAnimation.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerSaveData.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarSelection.cs" />
      <Compile Include="Assets\Scripts\CarSelector\SceneSwitcher.cs" />
+     <Compile Include="Assets\Scripts\CarSelector\CarModel.cs" />
      <Compile Include="Assets\Scripts\Player\MachineGun.cs" />
+     <Compile Include="Assets\Scripts\CarSelector\SaveManager.cs" />
      <Compile Include="Assets\Scripts\CarSelector\CarHolder.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\CarSelector\Car.cs" />
+     <Compile Include="Assets\Scripts\CarSelector\CarChanger.cs" />
      <Compile Include="Assets\Scripts\Player\Bullets\Missile.cs" />
      <None Include="Assets\Imported Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Imported Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -327,6 +335,12 @@
  </Reference>
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="EasyRoads3Dv3">
+ <HintPath>C:/Users/Tyler/Desktop/Project-Road-Rage/Assets/Imported Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll</HintPath>
+ </Reference>
+ <Reference Include="DelaunayER">
+ <HintPath>C:/Users/Tyler/Desktop/Project-Road-Rage/Assets/Imported Assets/EasyRoads3D/lib/DelaunayER.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.32f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
