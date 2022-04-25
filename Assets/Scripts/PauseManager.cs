@@ -56,7 +56,7 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1f;
         //NEED TO HAVE MAIN MENU IN BUILD SETTINGS
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
