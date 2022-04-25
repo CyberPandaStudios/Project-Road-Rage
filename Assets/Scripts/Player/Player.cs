@@ -38,9 +38,9 @@ public class Player : MonoBehaviour
 
 
     public void takeDamage(float damage){
-        health -= damage;
+        currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        if(health <= 0){
+        if(currentHealth <= 0){
             //Die
             animator.SetTrigger("Die");
         }

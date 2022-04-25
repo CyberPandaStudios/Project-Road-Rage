@@ -9,7 +9,7 @@ public class PlayerSaveData : MonoBehaviour
     public float[] position = new float[3];
 
     public PlayerSaveData(Player player){
-        health = player.health;
+        health = player.currentHealth;
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
         position[2] = player.transform.position.z;
