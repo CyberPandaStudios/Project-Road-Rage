@@ -5,24 +5,25 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-<<<<<<< HEAD
-
-    public float health = 200f;
+    public float maxHealth = 200f;
+    public float currentHealth;
     public Vector3 position;
-
-=======
-    public int maxHealth = 100;
-    public int currentHealth;
 
 
     public HealthBar healthBar;
->>>>>>> bryce
+
+
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        animator = gameObject.GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -30,20 +31,18 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            TakeDamage(20);
+            takeDamage(20);
         }
     }
 
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-    }
+
 
     public void takeDamage(float damage){
         health -= damage;
+        healthBar.SetHealth(currentHealth);
         if(health <= 0){
             //Die
+            animator.SetTrigger("Die");
         }
     }
 }
