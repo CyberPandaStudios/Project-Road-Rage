@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: d1ffe61f2523b804da1deaa67916b8e4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm.L
+    100002: Arm.R
+    100004: Armature
+    100006: Chest
+    100008: //RootNode
+    100010: DemonArmor
+    100012: DemonBelt
+    100014: DemonBody_Black
+    100016: DemonBody_Red
+    100018: Foot.L
+    100020: Foot.L_end
+    100022: Foot.R
+    100024: Foot.R_end
+    100026: ForeArm.L
+    100028: ForeArm.R
+    100030: Hand.L
+    100032: Hand.L_end
+    100034: Hand.R
+    100036: Hand.R_end
+    100038: Head
+    100040: Head_end
+    100042: Hip
+    100044: Leg.L
+    100046: Leg.R
+    100048: Neck
+    100050: Shoulder.L
+    100052: Shoulder.L.001
+    100054: Shoulder.L.002
+    100056: Shoulder.L.002_end
+    100058: Shoulder.L.003
+    100060: Shoulder.L.004
+    100062: Shoulder.L.004_end
+    100064: Shoulder.R
+    100066: Spine
+    100068: Thigh.L
+    100070: Thigh.R
+    100072: Wings_Black
+    100074: Wings_Red
+    400000: Arm.L
+    400002: Arm.R
+    400004: Armature
+    400006: Chest
+    400008: //RootNode
+    400010: DemonArmor
+    400012: DemonBelt
+    400014: DemonBody_Black
+    400016: DemonBody_Red
+    400018: Foot.L
+    400020: Foot.L_end
+    400022: Foot.R
+    400024: Foot.R_end
+    400026: ForeArm.L
+    400028: ForeArm.R
+    400030: Hand.L
+    400032: Hand.L_end
+    400034: Hand.R
+    400036: Hand.R_end
+    400038: Head
+    400040: Head_end
+    400042: Hip
+    400044: Leg.L
+    400046: Leg.R
+    400048: Neck
+    400050: Shoulder.L
+    400052: Shoulder.L.001
+    400054: Shoulder.L.002
+    400056: Shoulder.L.002_end
+    400058: Shoulder.L.003
+    400060: Shoulder.L.004
+    400062: Shoulder.L.004_end
+    400064: Shoulder.R
+    400066: Spine
+    400068: Thigh.L
+    400070: Thigh.R
+    400072: Wings_Black
+    400074: Wings_Red
+    2100000: Material.001
+    4300000: Wings_Black
+    4300002: DemonBody_Black
+    4300004: Wings_Red
+    4300006: DemonBelt
+    4300008: DemonArmor
+    4300010: DemonBody_Red
+    7400000: DemonAttack
+    7400002: DemonDeath
+    7400004: DemonIdle
+    7400006: DemonWalk
+    9500000: //RootNode
+    13700000: DemonArmor
+    13700002: DemonBelt
+    13700004: DemonBody_Black
+    13700006: DemonBody_Red
+    13700008: Wings_Black
+    13700010: Wings_Red
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: DemonAttack
+      takeName: Armature|DemonAttack
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DemonDeath
+      takeName: Armature|DemonDeath
+      firstFrame: 0
+      lastFrame: 58
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DemonIdle
+      takeName: Armature|DemonIdle
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: DemonWalk
+      takeName: Armature|DemonWalk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.5
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

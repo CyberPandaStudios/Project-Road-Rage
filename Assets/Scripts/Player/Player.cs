@@ -7,12 +7,13 @@ public class Player : MonoBehaviour
 
     public float health = 200f;
     public Vector3 position;
-
+    
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+              animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
         health -= damage;
         if(health <= 0){
             //Die
+            animator.SetTrigger("Die");
         }
     }
 }

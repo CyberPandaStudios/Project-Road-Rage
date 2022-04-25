@@ -227,7 +227,7 @@ public class EnemyController : MonoBehaviour
         //Take damage
         healthPoints -= damage;
         //Check death
-        if(healthPoints < 0)
+        if(healthPoints <= 0)
         {
             animator.SetTrigger("Die");
         }
