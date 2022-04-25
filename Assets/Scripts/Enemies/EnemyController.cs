@@ -22,7 +22,10 @@ public class EnemyController : MonoBehaviour
     //For some enemies aggroRadius != attack radius
     public float attackRadius = 20f;
     //Distance at which enemy stops aggroing on a player and returns to patrol state
+<<<<<<< HEAD
     public float attackDamage = 50f;
+=======
+>>>>>>> bryce
     public float deAggroRadius = 120f;
     //Speed that enemy patrols at
     public float patrolSpeed = 2f;
@@ -67,10 +70,13 @@ public class EnemyController : MonoBehaviour
 
     public string State;
 
+<<<<<<< HEAD
     private Animator animator;
     public bool dead = false;
 
     private WaitForSecondsRealtime waitTime;
+=======
+>>>>>>> bryce
 
     void Start()
     {
@@ -129,9 +135,12 @@ public class EnemyController : MonoBehaviour
             ChasePlayer();
         }
 
+<<<<<<< HEAD
         if(dead)
             Die();
 
+=======
+>>>>>>> bryce
     }
 
     /*
@@ -155,6 +164,13 @@ public class EnemyController : MonoBehaviour
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> bryce
     private void Patroling()
     {
         State = "Patrol";
@@ -206,7 +222,11 @@ public class EnemyController : MonoBehaviour
     private void ChasePlayer()
     {
         State = "Chase";
+<<<<<<< HEAD
         //agent.speed = followSpeed;
+=======
+        agent.speed = followSpeed;
+>>>>>>> bryce
         agent.SetDestination(target.position);
     }
     private void AttackPlayer()
@@ -214,12 +234,21 @@ public class EnemyController : MonoBehaviour
         State = "Attack";
         agent.SetDestination(transform.position);
         transform.LookAt(target);
+<<<<<<< HEAD
         //if(!alreadyAttacked)
         //{
             target.gameObject.GetComponent<Player>().takeDamage(attackDamage);
             target.GetComponent<CarController>().sphereRigidBody.AddForce(target.GetComponent<CarController>().sphereRigidBody.transform.position.normalized * -550f , ForceMode.Impulse);
             //alreadyAttacked = true;
         //}
+=======
+        if(!alreadyAttacked)
+        {
+            //Attack Code here
+
+            alreadyAttacked = true;
+        }
+>>>>>>> bryce
     }
 
     public void takeDamage(float damage)
@@ -229,12 +258,18 @@ public class EnemyController : MonoBehaviour
         //Check death
         if(healthPoints <= 0)
         {
+<<<<<<< HEAD
             animator.SetTrigger("Die");
         }
     }
 
     public void Die(){
         Destroy(gameObject);
+=======
+
+            //Die
+        }
+>>>>>>> bryce
     }
 
 
