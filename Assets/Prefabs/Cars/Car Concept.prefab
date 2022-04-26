@@ -6931,7 +6931,7 @@ GameObject:
   - component: {fileID: 6901260047358897369}
   m_Layer: 9
   m_Name: Car Concept
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6972,6 +6972,9 @@ MonoBehaviour:
   reverseAccel: 4
   maxSpeed: 50
   turnStrength: 180
+  driftStrength: 300
+  driftGravity: 500
+  breakForce: 1300
   gravityForce: 10
   dragOnGround: 3
   whatIsGround:
@@ -6982,8 +6985,8 @@ MonoBehaviour:
   leftFrontWheel: {fileID: 2233655375024413914}
   rightFrontWheel: {fileID: 1677910266806177124}
   maxWheelTurn: 30
-  Tower: {fileID: 6901260047002934735}
-  towerSpeed: 200
+  driftTrail: []
+  maxEmission: 25
 --- !u!1 &6901260047386206717
 GameObject:
   m_ObjectHideFlags: 0

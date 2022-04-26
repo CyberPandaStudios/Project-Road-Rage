@@ -2674,7 +2674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cars:
-  - {fileID: 1421606221888817891, guid: 0e3835ed3a7561b4bb1ee94812b8678b, type: 3}
+  - {fileID: 6901260047358897370, guid: 63ebe51c4eca46542a691d02adc4d1d4, type: 3}
   - {fileID: 831553053191374624, guid: 9de80059bf2896140bef2c504e0c8055, type: 3}
 --- !u!4 &1908098995
 Transform:
