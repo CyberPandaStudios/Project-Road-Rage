@@ -16,6 +16,8 @@
 -a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PlayerScriptAssemblies\Unity.ProBuilder.Stl.dll"
 -a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PlayerScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll"
 -a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PlayerScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll"
+-a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PlayerScriptAssemblies\Unity.Postprocessing.Runtime.dll"
+-a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PlayerScriptAssemblies\Boxophobic.Utils.Scripts.dll"
 -a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\lib\EasyRoads3Dv3.dll"
 -a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\lib\DelaunayER.dll"
 -a="C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll"
