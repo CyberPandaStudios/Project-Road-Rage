@@ -18,6 +18,9 @@ public class MonsterSpawner : MonoBehaviour
     {
         waitTime = new WaitForSecondsRealtime(spawnDelay);
         StartCoroutine(SpawnMonster());
+        for(int i = 0; i < maxSpawnCount / 2; i++){
+            SpawnMonster();
+        }
     }
 
      IEnumerator SpawnMonster(){

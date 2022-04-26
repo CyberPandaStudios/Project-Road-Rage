@@ -66,12 +66,18 @@ public class EnemyController : MonoBehaviour
 
     public string State;
 
+    Animator animator;
+
+    private Player player;
+
+    public float damage = 35f;
 
     void Start()
     {
+        player = FindObjectOfType<PlayerManager>().player.GetComponent<Player>();
         agent = GetComponentInChildren<NavMeshAgent>();
         agent.speed = patrolSpeed;
-
+        animator = GetComponent<Animator>();
         /*
          * There is a PlayerManager script on the GameManager object that will always hold the player, 
          * this allows scripts to find the player without searching through every instance of an object with the player script
@@ -88,7 +94,9 @@ public class EnemyController : MonoBehaviour
         /*
          * Get the distance between player and enemy, if distance is within look radius then follow the player as well face the player while moving.
          */
-         Debug.Log(State);
+        //Debug.Log(State);
+        animator.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
+
         float distance = Vector3.Distance(target.position, transform.position);
         Debug.Log("Distance: " + distance);
 
@@ -143,12 +151,6 @@ public class EnemyController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
-
-
-
-
-
-
 
 
     private void Patroling()
@@ -213,7 +215,8 @@ public class EnemyController : MonoBehaviour
         if(!alreadyAttacked)
         {
             //Attack Code here
-
+            player.takeDamage(damage);
+            animator.SetTrigger("Attack");
             alreadyAttacked = true;
         }
     }
@@ -223,10 +226,12 @@ public class EnemyController : MonoBehaviour
         //Take damage
         healthPoints -= damage;
         //Check death
-        if(healthPoints <= 0)
+        if(healthPoints <= 0f)
         {
-
-            //Die
+            followSpeed = 0f;
+            patrolSpeed = 0f;
+            animator.SetTrigger("Death");
+               
         }
     }
 
