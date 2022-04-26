@@ -41,6 +41,8 @@ public class PauseManager : MonoBehaviour
         //Pause game
         Time.timeScale = 0f;
         isPaused = true;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void ResumeGame()
@@ -50,10 +52,14 @@ public class PauseManager : MonoBehaviour
         //Resume game
         Time.timeScale = 1f;
         isPaused = false;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void GoToMainMenu()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1f;
         //NEED TO HAVE MAIN MENU IN BUILD SETTINGS
         SceneManager.LoadScene(0);

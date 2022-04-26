@@ -14,17 +14,15 @@ public class Player : MonoBehaviour
 
 
     private Animator animator;
-    CursorLockMode lockMode;
     // Start is called before the first frame update
     void Start()
     {
-        lockMode = CursorLockMode.Locked;
-        Cursor.lockState = lockMode;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
         animator = gameObject.GetComponent<Animator>();
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
