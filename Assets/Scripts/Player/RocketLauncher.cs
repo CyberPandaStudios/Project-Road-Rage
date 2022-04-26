@@ -14,7 +14,7 @@ public class RocketLauncher : MonoBehaviour
     public float shootForce;
     //Empty object the bullet will come out of the gun from
     public Transform shootPos;
-    private AudioSource mAudioSrc; 
+    public AudioSource mAudioSrc; 
 
     /*
 
@@ -28,7 +28,6 @@ public class RocketLauncher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mAudioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

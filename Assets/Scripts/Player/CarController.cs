@@ -38,6 +38,8 @@ public class CarController : MonoBehaviour
     public ParticleSystem[] driftTrail;
     public float maxEmission = 25;
     private float emissionRate;
+    public AudioSource mAudioSrc; 
+    
 
     void Start()
     {

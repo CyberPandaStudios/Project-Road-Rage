@@ -1039,6 +1039,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   State: 
+  damage: 35
 --- !u!195 &8235356680248704334
 NavMeshAgent:
   m_ObjectHideFlags: 0
