@@ -68,8 +68,13 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
+    private Player player;
+
+    public float damage = 35f;
+
     void Start()
     {
+        player = FindObjectOfType<PlayerManager>().player.GetComponent<Player>();
         agent = GetComponentInChildren<NavMeshAgent>();
         agent.speed = patrolSpeed;
         animator = GetComponent<Animator>();
@@ -210,6 +215,7 @@ public class EnemyController : MonoBehaviour
         if(!alreadyAttacked)
         {
             //Attack Code here
+            player.takeDamage(damage);
             animator.SetTrigger("Attack");
             alreadyAttacked = true;
         }
