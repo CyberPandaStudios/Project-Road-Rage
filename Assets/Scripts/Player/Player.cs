@@ -14,15 +14,16 @@ public class Player : MonoBehaviour
 
 
     private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
+
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
         animator = gameObject.GetComponent<Animator>();
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     // Update is called once per frame
