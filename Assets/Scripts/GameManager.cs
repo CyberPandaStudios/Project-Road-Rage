@@ -5,9 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    CursorLockMode lockMode;
     void Start()
     {
-        Cursor.visible = false;
+        lockMode = CursorLockMode.Locked;
+        Cursor.lockState = lockMode;
     }
 
     // Update is called once per frame

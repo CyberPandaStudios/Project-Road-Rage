@@ -427,11 +427,20 @@
     <Reference Include="unityplastic">
         <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="EasyRoads3Dv3Editor">
+        <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\Editor\EasyRoads3Dv3Editor.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
         <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.render-pipelines.core@10.8.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyRoads3Dv3">
+        <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\lib\EasyRoads3Dv3.dll</HintPath>
+    </Reference>
+    <Reference Include="DelaunayER">
+        <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\lib\DelaunayER.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -806,13 +815,13 @@
       <Project>{c1fa9298-cd39-a6f3-e5fe-a78038983579}</Project>
       <Name>Unity.Mathematics.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{6a518756-5995-60b9-3231-7b319de963c0}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{bb5e50cb-7f85-7790-3e42-990a2c630258}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{6a518756-5995-60b9-3231-7b319de963c0}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{1ca66ffd-9559-1980-8efd-2fa4fb4b6a47}</Project>

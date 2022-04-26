@@ -281,11 +281,20 @@
     <Reference Include="unityplastic">
         <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="EasyRoads3Dv3Editor">
+        <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\Editor\EasyRoads3Dv3Editor.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
         <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Library\PackageCache\com.unity.render-pipelines.core@10.8.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyRoads3Dv3">
+        <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\lib\EasyRoads3Dv3.dll</HintPath>
+    </Reference>
+    <Reference Include="DelaunayER">
+        <HintPath>C:\Users\brand\OneDrive\Documents\ProjectRoadRage\Project-Road-Rage\Assets\Imported Assets\EasyRoads3D\lib\DelaunayER.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -634,13 +643,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{6a518756-5995-60b9-3231-7b319de963c0}</Project>
-      <Name>UnityEditor.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{bb5e50cb-7f85-7790-3e42-990a2c630258}</Project>
       <Name>UnityEngine.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{6a518756-5995-60b9-3231-7b319de963c0}</Project>
+      <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
