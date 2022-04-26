@@ -14,7 +14,7 @@ public class RocketLauncher : MonoBehaviour
     public float shootForce;
     //Empty object the bullet will come out of the gun from
     public Transform shootPos;
-
+    private AudioSource mAudioSrc; 
 
     /*
 
@@ -28,7 +28,7 @@ public class RocketLauncher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        mAudioSrc = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,6 +41,7 @@ public class RocketLauncher : MonoBehaviour
          */
         if(fireType == 0){
             if (Input.GetMouseButtonDown(0)){
+                mAudioSrc.Play();
                 var instanceBullet = Instantiate(bullet, shootPos.transform.position, Tower.rotation);
                 instanceBullet.transform.Rotate(0, 89, 0);
                 //Forward force, must be offset due to gun placement
@@ -51,6 +52,7 @@ public class RocketLauncher : MonoBehaviour
             }
         }else if (fireType == 1){
             if (Input.GetMouseButton(0)){
+                mAudioSrc.Play();
                 var instanceBullet = Instantiate(bullet, shootPos.transform.position, Tower.rotation);
                 instanceBullet.transform.Rotate(0, 180, 0);
                 //Forward force, must be offset due to gun placement
