@@ -1019,10 +1019,11 @@ MonoBehaviour:
   healthPoints: 200
   aggroRadius: 20
   lookRadius: 0
-  attackRadius: 5
+  attackRadius: 2
   deAggroRadius: 120
   patrolSpeed: 2
   followSpeed: 5
+  knockBackForce: 300
   isAggrod: 0
   walkPoint: {x: 0, y: 0, z: 0}
   isWalkPointSet: 0
@@ -1039,6 +1040,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   State: 
+  damage: 35
 --- !u!195 &8235356680248704334
 NavMeshAgent:
   m_ObjectHideFlags: 0

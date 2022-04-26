@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
     //Speed that the enemey chases at
     public float followSpeed = 5f;
     
-    
+    public float knockBackForce = 1000f;
     
     
     
@@ -99,7 +99,8 @@ public class EnemyController : MonoBehaviour
 
         float distance = Vector3.Distance(target.position, transform.position);
         Debug.Log("Distance: " + distance);
-
+        if(distance > 10)
+            alreadyAttacked = false;
         //playerInAggroRange = Physics.CheckSphere(transform.position, aggroRadius, whatIsPlayer);
         playerInAggroRange = distance < aggroRadius ? true : false;
         //playerInAttackRange = Physics.CheckSphere(transform.position, attackRadius, whatIsPlayer);
@@ -218,6 +219,10 @@ public class EnemyController : MonoBehaviour
             player.takeDamage(damage);
             animator.SetTrigger("Attack");
             alreadyAttacked = true;
+            Vector3 direction = player.transform.position - gameObject.transform.position;
+            direction.y = 0;
+            player.GetComponent<CarController>().sphereRigidBody.AddForce(direction.normalized * knockBackForce * 10f, ForceMode.Impulse);
+            gameObject.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 

@@ -13,7 +13,7 @@ public class CameraManager : MonoBehaviour{
 
     // Update is called once per frame
     void Update(){
-        if(Input.GetKey("v")){
+        if(Input.GetKey("s")){
             main.enabled = false;
             rear.enabled = true;
         }

@@ -781,12 +781,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 1000
-  aggroRadius: 20
+  aggroRadius: 40
   lookRadius: 0
   attackRadius: 5
   deAggroRadius: 120
   patrolSpeed: 2
   followSpeed: 5
+  knockBackForce: 1000
   isAggrod: 0
   walkPoint: {x: 0, y: 0, z: 0}
   isWalkPointSet: 0
@@ -803,6 +804,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   State: 
+  damage: 35
 --- !u!1 &6893627827662099292
 GameObject:
   m_ObjectHideFlags: 0

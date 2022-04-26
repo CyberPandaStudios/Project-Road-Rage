@@ -10,6 +10,8 @@ public class CarHolder : MonoBehaviour
         private void Update()
         {
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y + Time.deltaTime * speed, transform.eulerAngles.z);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
 }

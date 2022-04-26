@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement; 
 
 public class Player : MonoBehaviour
 {
@@ -18,9 +18,12 @@ public class Player : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+
+        if(healthBar != null)
+            healthBar.SetMaxHealth(maxHealth);
 
         animator = gameObject.GetComponent<Animator>();
+        
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -28,20 +31,18 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            takeDamage(20);
-        }
+        
     }
-
-
 
     public void takeDamage(float damage){
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         if(currentHealth <= 0){
             //Die
-            animator.SetTrigger("Die");
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(3);
         }
     }
 }
